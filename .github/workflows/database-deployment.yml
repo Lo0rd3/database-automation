@@ -14,6 +14,11 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
     inputs:
+      server_name:
+        required: true
+      almoço:
+        type: bolean
+        description: 'francesinha hoje ?'
       serverType:
         required: true
         default: 'SqlServer'
